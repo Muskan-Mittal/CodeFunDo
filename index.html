@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+  <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v2.0.0/dist/aframe-physics-system.min.js"></script>
+</head>
+
+<body>
+  <a-scene>
+    <a-camera>
+      <a-cursor color="orange" position="5 1.6 -2 ">
+    </a-camera>
+    <!--first box-->
+    <a-plane position="-3.41 2 -4" rotation="0 90 0" scale="10 10" color="#A3E4D7"></a-plane>
+    <a-plane position="3 2 -7" rotation="0 0 0" scale="20 20" color="#F0B27A"></a-plane>
+    <a-plane position="6.59 2 -4" rotation="0 -90 0" scale="10 10" color="#A3E4D7"></a-plane>
+    <a-plane position="1.59 7 -4" rotation="90 0 0" scale="10 10" color="#A3E4D7 "></a-plane>
+    <a-plane position="1.59 -3 -4" rotation="-90 0 0" scale="10 10" color="#A3E4D7"></a-plane>
+    <a-plane position="1.59 2 1" rotation="0 180 0" scale="10 10" color="#A3E4D7" ></a-plane>
+
+    <a-plane id="" position="" scale=""  color=""></a-plane>
+
+    <a-text value="LEARNING SOLID STATE" width="15" font="https://cdn.aframe.io/fonts/Exo2SemiBold.fnt" position="-1.8 6.2 -7" color="#A04000"></a-text>
+    <a-text value="1. Simple Cubic " font = "https://cdn.aframe.io/fonts/mozillavr.fnt" width="15" position="-1.68 4 -7" color="green"></a-text>
+    <a-text value="2. Body Centred (BCC)" font = "https://cdn.aframe.io/fonts/mozillavr.fnt" width="15" position="-1.68 3 -7" color="green"></a-text>
+    <a-text value="3. Face Centred (FCC)" font = "https://cdn.aframe.io/fonts/mozillavr.fnt" width="15" position="-1.68 2 -7" color="green"></a-text>
+    <a-text value="4. HCP" font = "https://cdn.aframe.io/fonts/mozillavr.fnt" width="15" position="-1.68 1 -7" color="green"></a-text>
+
+    <!-- HCP Layer 1 -->
+    <a-sphere color ="#E59866" radius = "1" position="50 0 -31.732" shadow></a-sphere>
+    <a-sphere color ="#E59866" radius = "1" position="51 0 -33.464" shadow></a-sphere>
+    <a-sphere color ="#E59866" radius = "1" position="53 0 -33.464" shadow></a-sphere>
+    <a-sphere color ="#E59866" radius = "1" position="54 0 -31.732" shadow></a-sphere>
+    <a-sphere color ="#E59866" radius = "1" position="51 0 -30" shadow></a-sphere>
+    <a-sphere color ="#E59866" radius = "1" position="53 0 -30" shadow></a-sphere>
+    <a-sphere color ="#E59866" radius = "1" position="52 0 -31.732" shadow></a-sphere>
+
+    <!-- Layer 2 -->
+    <a-sphere color ="#F1948A" radius = "1" position="53 1.63299 -32.30935" shadow></a-sphere>
+    <a-sphere color ="#F1948A" radius = "1" position="51.42265 1.63299 -32.30935" shadow></a-sphere>
+    <a-sphere color ="#F1948A" radius = "1" position="52 1.63299 -30.5773" shadow></a-sphere>
+
+    <!-- Layer 3 -->
+    <a-sphere color ="#E59866" radius = "1" position="50 3.26598 -31.732" shadow></a-sphere>
+    <a-sphere color ="#E59866" radius = "1" position="51 3.26598 -33.464" shadow></a-sphere>
+    <a-sphere color ="#E59866" radius = "1" position="53 3.26598 -33.464" shadow></a-sphere>
+    <a-sphere color ="#E59866" radius = "1" position="54 3.26598 -31.732" shadow></a-sphere>
+    <a-sphere color ="#E59866" radius = "1" position="51 3.26598 -30" shadow></a-sphere>
+    <a-sphere color ="#E59866" radius = "1" position="53 3.26598 -30" shadow></a-sphere>
+    <a-sphere color ="#E59866" radius = "1" position="52 3.26598 -31.732" shadow></a-sphere>
+  </a-scene>
+</body>
+</html>
