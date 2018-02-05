@@ -34,6 +34,14 @@
       <a-plane id="FCCTextbox" position="-1.1 0.8 -7" scale="3.9 1.6 " color="#F5CBA7"></a-plane>
       <a-plane id="HCPTextbox" position="4 0.8 -7" scale="5 1.6" color="#F5CBA7"></a-plane>
 
+
+
+
+      <a-plane  id="s1" position="-2 3 -7" scale="2 2" color="#F5CBA7"></a-plane>
+      <a-plane  id="s2" position="2 3 -7" scale="2 2" color="#F5CBA7"></a-plane>
+      <a-plane  id="s3" position="-2 0 -7" scale="3 3 " color="#F5CBA7"></a-plane>
+      <a-plane  id="s4" position="2 0 -7" scale="3 1" color="#F5CBA7"></a-plane>
+
       <!-- Simple Cubic -->
       <a-curvedimage src="#bg_image" height="40" radius="10" theta-length="270"
       rotation="0 40.8 0" scale="2 2 2" position="90 2 -12"></a-curvedimage>
@@ -60,7 +68,7 @@
       <a-sphere color="#F1948A" radius="1" position="21.1547 1.1547 -31.1547 " shadow></a-sphere>
 
       <!-- FCC -->
-      <a-curvedimage src="#bg_image" height="30" radius="5" theta-length="270"
+      <a-curvedimage src="#bg_image" height="30" radius="9" theta-length="270"
       rotation="0 40.8 0" scale="2 2 2" position="51.414 1.414 -6.586"></a-curvedimage>.
       <a-sphere color ="#E59866" radius = "1" position="50 0 -8 " shadow></a-sphere>
       <a-sphere color ="#E59866" radius = "1" position="52.8284 0 -8 " shadow></a-sphere>
@@ -112,6 +120,7 @@
 
     SimpleCubicText.addEventListener( 'mouseenter', function ( )
     {
+
       camera.setAttribute( 'position',
       {
         x : 91,
