@@ -110,6 +110,19 @@
     var FCCText = document.querySelector('#FCCTextbox');
     var HCPText = document.querySelector('#HCPTextbox');
 
+    var text = {
+
+      "text":{
+
+        "sc": "This structure is of simple cubic cell. Such a unit cell contains 8 carbon atoms each at the corner of a cube.",
+        "bcc": "This structure is of body centered unit cell. Such a unit cell contains one constituent particle at its body centre beside the ones that are at its corners.",
+        "fcc": "This structure is of face centered unit cell. In such a unit cell one constituent particle is present at the centre of any two opposite faces besides the ones present at its corners.",
+        "hcp": "This structure represents hexagonal close packing."
+      }
+    }
+
+    var jsonObj = text;
+
     SimpleCubicText.addEventListener( 'mouseenter', function ( )
     {
 
@@ -119,6 +132,7 @@
         y : 0,
         z : 3
       });
+      responsiveVoice.speak(jsonObj.text.sc);
     });
 
     BCCText.addEventListener( 'mouseenter', function ( )
@@ -129,6 +143,7 @@
         y : 0,
         z : -18
       });
+      responsiveVoice.speak(jsonObj.text.bcc);
     });
 
     FCCText.addEventListener( 'mouseenter', function ( )
@@ -140,6 +155,7 @@
         y : 0,
         z : 3
       });
+      responsiveVoice.speak(jsonObj.text.fcc);
     });
 
     HCPText.addEventListener( 'mouseenter', function ( )
@@ -150,7 +166,10 @@
         y : 2,
         z : 0
       });
+      responsiveVoice.speak(jsonObj.text.hcp);
     });
     </script>
+    <script type="text/javascript" src="play.js"></script>
+    <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
   </body>
   </html>
