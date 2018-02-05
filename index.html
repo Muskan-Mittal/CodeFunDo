@@ -7,8 +7,8 @@
 </head>
 <body>
   <a-scene>
-    <a-camera>
-      <a-cursor color="orange" position="5 1.6 -2 ">
+    <a-camera position = "1.5 0.45 0.5">
+      <a-cursor color="orange" position="1.5 0.45 0.5 ">
       </a-camera>
 
       <a-assets>
@@ -25,13 +25,15 @@
 
       <a-text value="LEARNING SOLID STATE" width="15" font="https://cdn.aframe.io/fonts/Exo2SemiBold.fnt" position="-1.8 6.2 -7" color="#A04000"></a-text>
       <a-text value="1. Simple Cubic " font = "https://cdn.aframe.io/fonts/mozillavr.fnt" width="15" position="-1.68 4 -7" color="green"></a-text>
-      <a-text value="2. Body Centered (BCC)" font = "https://cdn.aframe.io/fonts/mozillavr.fnt" width="15" position="-1.68 3 -7" color="green"></a-text>
-      <a-text value="3. Face Centered (FCC)" font = "https://cdn.aframe.io/fonts/mozillavr.fnt" width="15" position="-1.68 2 -7" color="green"></a-text>
+
+      <a-box  id="bcc"  position="-0.75 2 -7" rotation="0 0 0" scale="2 1 0"  color="red"></a-box>
+      <a-text value="2. Body Centered (BCC)" font = "https://cdn.aframe.io/fonts/mozillavr.fnt" width="15" position="-1.68 3 -7" color="green"  ></a-text>
+      <a-text value="3. Face Centered (FCC)" font = "https://cdn.aframe.io/fonts/mozillavr.fnt" width="15" position="-1.68 2 -7" color="green" id="fcc"></a-text>
       <a-text value="4. HCP" font = "https://cdn.aframe.io/fonts/mozillavr.fnt" width="15" position="-1.68 1 -7" color="green"></a-text>
 
       <!-- Simple Cubic -->
       <a-curvedimage src="#bg_image" height="30" radius="4.5" theta-length="280"
-                 rotation="0 40.8 0" scale="2 2 2" position="20 2 -12"></a-curvedimage>
+      rotation="0 40.8 0" scale="2 2 2" position="20 2 -12"></a-curvedimage>
       <a-sphere color="#E59866" radius="1" position="20 0 -8 " shadow></a-sphere>
       <a-sphere color="#E59866" radius="1" position="22 0 -8 " shadow></a-sphere>
       <a-sphere color="#E59866" radius="1" position="20 2 -8 " shadow></a-sphere>
@@ -43,16 +45,16 @@
 
       <!-- BCC -->
       <a-curvedimage src="#bg_image" height="30" radius="4.5" theta-length="270"
-                 rotation="0 40.8 0" scale="2 2 2" position="37 2 -12"></a-curvedimage>
-    <a-sphere color="#E59866" radius="1" position="37 0 -8 " shadow></a-sphere>
-    <a-sphere color="#E59866" radius="1" position="39.309  0 -8 " shadow></a-sphere>
-    <a-sphere color="#E59866" radius="1" position="37 2.309 -8 " shadow></a-sphere>
-    <a-sphere color="#E59866" radius="1" position="37 0 -10.309 " shadow></a-sphere>
-    <a-sphere color="#E59866" radius="1" position="37 2.309 -10.309 " shadow></a-sphere>
-    <a-sphere color="#E59866" radius="1" position="39.309 2.309 -10.309 " shadow></a-sphere>
-    <a-sphere color="#E59866" radius="1" position="39.309 0 -10.309 " shadow></a-sphere>
-    <a-sphere color="#E59866" radius="1" position="39.309 2.309 -8 " shadow></a-sphere>
-    <a-sphere color="#F1948A" radius="1" position="38.1547 1.1547 -9.1547 " shadow></a-sphere>
+      rotation="0 40.8 0" scale="2 2 2" position="37 2 -12"></a-curvedimage>
+      <a-sphere color="#E59866" radius="1" position="37 0 -8 " shadow></a-sphere>
+      <a-sphere color="#E59866" radius="1" position="39.309  0 -8 " shadow></a-sphere>
+      <a-sphere color="#E59866" radius="1" position="37 2.309 -8 " shadow></a-sphere>
+      <a-sphere color="#E59866" radius="1" position="37 0 -10.309 " shadow></a-sphere>
+      <a-sphere color="#E59866" radius="1" position="37 2.309 -10.309 " shadow></a-sphere>
+      <a-sphere color="#E59866" radius="1" position="39.309 2.309 -10.309 " shadow></a-sphere>
+      <a-sphere color="#E59866" radius="1" position="39.309 0 -10.309 " shadow></a-sphere>
+      <a-sphere color="#E59866" radius="1" position="39.309 2.309 -8 " shadow></a-sphere>
+      <a-sphere color="#F1948A" radius="1" position="38.1547 1.1547 -9.1547 " shadow></a-sphere>
       <!-- FCC -->
       <a-curvedimage src="#bg_image" height="30" radius="5" theta-length="270"
       rotation="0 40.8 0" scale="2 2 2" position="51.414 1.414 -6.586"></a-curvedimage>.
@@ -93,6 +95,25 @@
       <a-sphere color ="#E59866" radius = "1" position="51 3.26598 -30" shadow></a-sphere>
       <a-sphere color ="#E59866" radius = "1" position="53 3.26598 -30" shadow></a-sphere>
       <a-sphere color ="#E59866" radius = "1" position="52 3.26598 -31.732" shadow></a-sphere>
+
     </a-scene>
+
+    <script type="text/javascript">
+
+    var a = document.querySelector('#bcc')
+
+    a.addEventListener('mouseenter', function ( )
+    {
+      camera.setAttribute( 'position',
+      {
+        x : 51,
+        y : 0,
+        z : 0
+      } );
+
+    });
+
+
+    </script>
   </body>
   </html>
