@@ -5,7 +5,7 @@ It contains 3D models which clearly help to visualise the different unit cell st
 
 ## Requirements
 
-VR Heatset
+VR Headset
 
 ## Some more Applications
 
